@@ -1,0 +1,787 @@
+DEBUG 2015-04-28 17:47:30,437: 	 Executing command: 'submit'
+DEBUG 2015-04-28 17:47:30,438: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 17:47:30,452: 	 Checking credentials
+DEBUG 2015-04-28 17:47:30,452: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 17:47:30,452: 	 Getting proxy life time left
+DEBUG 2015-04-28 17:47:30,555: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 26433
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 17:47:30,658: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 26433
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 17:47:30,658: 	 Proxy valid for 07:20:33 hours
+INFO 2015-04-28 17:47:30,659: 	 Will use configuration file ZhToBB_crab.py.
+DEBUG 2015-04-28 17:47:30,659: 	 Loading configuration
+DEBUG 2015-04-28 17:47:30,665: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2015-04-28 17:47:30,777: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 17:47:30,777: 	 Checking credentials
+DEBUG 2015-04-28 17:47:30,777: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 17:47:30,777: 	 Getting proxy life time left
+DEBUG 2015-04-28 17:47:30,880: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 26433
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 17:47:30,983: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 26433
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 17:47:30,983: 	 Proxy valid for 07:20:33 hours
+DEBUG 2015-04-28 17:47:31,086: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 17:47:32,337: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 17:47:32,445: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 17:47:32,445: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 17:47:32,445: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 17:47:33,751: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 691:21:59  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 17:47:33,752: 	 Myproxy is valid: 2488919
+DEBUG 2015-04-28 17:47:33,752: 	 Command use: submit
+DEBUG 2015-04-28 17:47:33,752: 	 Options use: ['ZhToBB_crab.py']
+DEBUG 2015-04-28 17:47:34,971: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 17:47:34,971: 	 Instance is prod
+DEBUG 2015-04-28 17:47:34,971: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 17:47:34,971: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 17:47:34,971: 	 Started submission
+DEBUG 2015-04-28 17:47:34,971: 	 Working on ./crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 17:47:36,310: 	 Found CMSSW_7_3_1_patch2 for slc6_amd64_gcc481 with base /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2
+DEBUG 2015-04-28 17:47:36,327: 	 UNIQUE NAME: tarUUID 4ff6851b-39ed-456d-910f-457931577943 
+DEBUG 2015-04-28 17:47:36,328: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.requestName = 'Zh_m125_PtZ-200'
+config.section_('JobType')
+config.JobType.psetName = 'ConfFile_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowNonProductionCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/Zh_m125_PtZ-200/jstupak-PHYS14_50_V2-MINIAODSIM-5aeef11518ff3267c48efc923ff0710e/USER'
+config.Data.outLFN = '/store/user/bparida/test_job/new/'
+config.Data.publishDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter/'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = True
+config.Data.inputDBS = 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader/'
+config.Data.splitting = 'FileBased'
+config.Data.publishDataName = 'Zh_m125_PtZ-200'
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+
+DEBUG 2015-04-28 17:47:36,328: 	 self.config.JobType.psetName: ConfFile_cfg.py
+DEBUG 2015-04-28 17:47:36,328: 	 Importing CMSSW config ConfFile_cfg.py
+DEBUG 2015-04-28 17:47:36,441: 	 The following EDM output files will be collected: []
+DEBUG 2015-04-28 17:47:36,441: 	 The following TFile output files will be collected: ['output.root']
+DEBUG 2015-04-28 17:47:36,441: 	 The following user output files will be collected: []
+DEBUG 2015-04-28 17:47:36,441: 	 Writing CMSSW config to ./crab_Zh_m125_PtZ-200/inputs/CMSSW_cfg.py
+DEBUG 2015-04-28 17:47:36,456: 	 Found CMSSW_7_3_1_patch2 for slc6_amd64_gcc481 with base /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2
+DEBUG 2015-04-28 17:47:36,456: 	 Making tarball in ./crab_Zh_m125_PtZ-200/inputs/4ff6851b-39ed-456d-910f-457931577943default.tgz
+DEBUG 2015-04-28 17:47:36,457: 	  checking directory /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/lib
+DEBUG 2015-04-28 17:47:36,457: 	  adding directory /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/lib to tarball
+DEBUG 2015-04-28 17:47:37,055: 	  checking directory /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/module
+DEBUG 2015-04-28 17:47:37,149: 	 tgz contents: [('lib', 0, 1430253573, 'bparida'), ('lib/slc6_amd64_gcc481', 0, 1430253636, 'bparida'), ('lib/slc6_amd64_gcc481/pluginTestMiniAnalyzerAuto.so', 120810, 1430253594, 'bparida'), ('lib/slc6_amd64_gcc481/TestMiniAnalyzerAuto.edmplugin', 37, 1430253594, 'bparida'), ('lib/slc6_amd64_gcc481/libHbbHbbProducer.so', 1581312, 1430253621, 'bparida'), ('lib/slc6_amd64_gcc481/pluginHbbHbbProducerAuto.so', 532584, 1430253630, 'bparida'), ('lib/slc6_amd64_gcc481/HbbHbbProducerAuto.edmplugin', 35, 1430253630, 'bparida'), ('lib/slc6_amd64_gcc481/pluginHbbHbbProducerCapabilities.so', 14934, 1430253632, 'bparida'), ('lib/slc6_amd64_gcc481/HbbHbbProducerCapabilities.edmplugin', 43, 1430253632, 'bparida'), ('lib/slc6_amd64_gcc481/.poisonededmplugincache', 0, 1430253634, 'bparida'), ('lib/slc6_amd64_gcc481/.edmplugincache', 4230, 1430253636, 'bparida'), ('PSet.py', 101, 1430261256, 'bparida'), ('PSet.pkl', 8407, 1430261256, 'bparida'), ('debug/originalPSet.py', 5200, 1430257317, 'bparida'), ('debug/crabConfig.py', 929, 1430261257, 'bparida')]
+DEBUG 2015-04-28 17:47:37,149: 	 MD5 checksum: b4d7f0b1919f3f5b4b91e08e1acacfa3
+DEBUG 2015-04-28 17:47:37,151: 	  uploading archive to cache /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/inputs/4ff6851b-39ed-456d-910f-457931577943default.tgz 
+DEBUG 2015-04-28 17:47:39,888: 	 Result uploading input files: ('2fb373adcac38344feebe36379f357cdd7a0a01a23008ab98d42fa929bbeef72.tar.gz', 'b4d7f0b1919f3f5b4b91e08e1acacfa3') 
+WARNING 2015-04-28 17:47:39,888: 	 Warning: The following output files will not be published, as they are not EDM files: ['output.root']
+INFO 2015-04-28 17:47:39,888: 	 Sending the request to the server
+DEBUG 2015-04-28 17:47:39,889: 	 Submitting {'ignorelocality': 1, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 1, 'cachefilename': '2fb373adcac38344feebe36379f357cdd7a0a01a23008ab98d42fa929bbeef72.tar.gz', 'addoutputfiles': [], 'generator': 'pythia', 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'jobsw': 'CMSSW_7_3_1_patch2', 'edmoutfiles': [], 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'inputdata': '/Zh_m125_PtZ-200/jstupak-PHYS14_50_V2-MINIAODSIM-5aeef11518ff3267c48efc923ff0710e/USER', 'lfn': '/store/user/bparida/test_job/new/', 'dryrun': 0, 'workflow': 'crab_Zh_m125_PtZ-200', 'adduserfiles': [], 'publishname': 'Zh_m125_PtZ-200-b4d7f0b1919f3f5b4b91e08e1acacfa3', 'nonprodsw': 1, 'tfileoutfiles': ['output.root'], 'oneEventMode': 0, 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc481', 'totalunits': 0, 'splitalgo': 'FileBased', 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'jobtype': 'Analysis'} 
+DEBUG 2015-04-28 17:47:39,889: 	 Encoded submit request: ignorelocality=1&savelogsflag=1&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=1&cachefilename=2fb373adcac38344feebe36379f357cdd7a0a01a23008ab98d42fa929bbeef72.tar.gz&generator=pythia&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&jobsw=CMSSW_7_3_1_patch2&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&inputdata=%2FZh_m125_PtZ-200%2Fjstupak-PHYS14_50_V2-MINIAODSIM-5aeef11518ff3267c48efc923ff0710e%2FUSER&lfn=%2Fstore%2Fuser%2Fbparida%2Ftest_job%2Fnew%2F&dryrun=0&workflow=crab_Zh_m125_PtZ-200&publishname=Zh_m125_PtZ-200-b4d7f0b1919f3f5b4b91e08e1acacfa3&nonprodsw=1&oneEventMode=0&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc481&totalunits=0&splitalgo=FileBased&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&jobtype=Analysis&tfileoutfiles=output.root
+DEBUG 2015-04-28 17:47:41,301: 	 Result: {'result': [{'RequestName': '150428_224741:bparida_crab_Zh_m125_PtZ-200'}]}
+INFO 2015-04-28 17:47:41,303: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2015-04-28 17:47:41,304: 	 Task name: 150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 17:47:41,304: 	 Please use 'crab status' to check how the submission process proceeds
+DEBUG 2015-04-28 17:47:41,304: 	 About to return
+DEBUG 2015-04-28 18:09:20,524: 	 Executing command: 'status'
+DEBUG 2015-04-28 18:09:20,525: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 18:09:20,538: 	 Checking credentials
+DEBUG 2015-04-28 18:09:20,538: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 18:09:20,538: 	 Getting proxy life time left
+DEBUG 2015-04-28 18:09:20,641: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 25123
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:09:20,744: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 25123
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:09:20,744: 	 Proxy valid for 06:58:43 hours
+DEBUG 2015-04-28 18:09:20,862: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 18:09:20,862: 	 Checking credentials
+DEBUG 2015-04-28 18:09:20,862: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 18:09:20,862: 	 Getting proxy life time left
+DEBUG 2015-04-28 18:09:20,965: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 25123
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:09:21,068: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 25122
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:09:21,069: 	 Proxy valid for 06:58:43 hours
+DEBUG 2015-04-28 18:09:21,171: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:09:27,521: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 18:09:27,630: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 18:09:27,630: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 18:09:27,630: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 18:09:28,936: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 691:00:04  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:09:28,937: 	 Myproxy is valid: 2487604
+DEBUG 2015-04-28 18:09:28,937: 	 Command use: status
+DEBUG 2015-04-28 18:09:28,937: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-28 18:09:30,163: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 18:09:30,163: 	 Instance is prod
+DEBUG 2015-04-28 18:09:30,163: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 18:09:30,163: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 18:09:30,163: 	 Looking up detailed status of task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 18:09:34,503: 	 {'status': 'SUBMITTED', 'saveLogs': 'T', 'jobsPerStatus': {'finished': 22, 'transferring': 2, 'running': 13, 'transferred': 4, 'idle': 7}, 'jobs': {'28': {'State': 'transferring'}, '29': {'State': 'finished'}, '24': {'State': 'running'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '48': {'State': 'finished'}, '23': {'State': 'transferred'}, '46': {'State': 'idle'}, '47': {'State': 'idle'}, '44': {'State': 'idle'}, '45': {'State': 'finished'}, '42': {'State': 'transferring'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'idle'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'finished'}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'transferred'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}, '13': {'State': 'transferred'}, '12': {'State': 'finished'}, '14': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '39': {'State': 'running'}, '38': {'State': 'idle'}, '15': {'State': 'finished'}, '22': {'State': 'running'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'idle'}, '35': {'State': 'running'}, '34': {'State': 'idle'}, '33': {'State': 'finished'}, '32': {'State': 'transferred'}}, 'publication': {}, 'taskWarningMsg': [], 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb', 'pool': {}, 'totalJobdefs': 0, 'jobSetID': '150428_224741:bparida_crab_Zh_m125_PtZ-200', 'jobdefErrors': [], 'outdatasets': None, 'jobList': [['transferring', 42], ['finished', 48], ['running', 43], ['running', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['running', 20], ['running', 21], ['running', 22], ['transferred', 23], ['idle', 46], ['idle', 47], ['idle', 44], ['finished', 45], ['transferring', 28], ['finished', 29], ['running', 40], ['idle', 41], ['finished', 1], ['finished', 3], ['finished', 2], ['finished', 5], ['finished', 4], ['finished', 7], ['transferred', 6], ['finished', 9], ['finished', 8], ['running', 39], ['idle', 38], ['finished', 11], ['finished', 10], ['transferred', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['running', 19], ['running', 18], ['running', 31], ['running', 30], ['running', 37], ['idle', 36], ['running', 35], ['idle', 34], ['finished', 33], ['transferred', 32]]}
+INFO 2015-04-28 18:09:34,503: 	 Task name:			150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:09:34,503: 	 Task status:			SUBMITTED
+INFO 2015-04-28 18:09:34,504: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:09:34,504: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=crab&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:09:34,504: 	 Details:			finished       45.8% (22/48)
+INFO 2015-04-28 18:09:34,504: 	 				idle           14.6% ( 7/48)
+INFO 2015-04-28 18:09:34,504: 	 				running        27.1% (13/48)
+INFO 2015-04-28 18:09:34,504: 	 				transferred     8.3% ( 4/48)
+INFO 2015-04-28 18:09:34,505: 	 				transferring    4.2% ( 2/48)
+DEBUG 2015-04-28 18:11:07,268: 	 Executing command: 'status'
+DEBUG 2015-04-28 18:11:07,269: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 18:11:07,284: 	 Checking credentials
+DEBUG 2015-04-28 18:11:07,284: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 18:11:07,284: 	 Getting proxy life time left
+DEBUG 2015-04-28 18:11:07,387: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 25016
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:11:07,490: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 25016
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:11:07,490: 	 Proxy valid for 06:56:56 hours
+DEBUG 2015-04-28 18:11:07,603: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 18:11:07,603: 	 Checking credentials
+DEBUG 2015-04-28 18:11:07,603: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 18:11:07,603: 	 Getting proxy life time left
+DEBUG 2015-04-28 18:11:07,706: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 25016
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:11:07,809: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 25016
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:11:07,810: 	 Proxy valid for 06:56:56 hours
+DEBUG 2015-04-28 18:11:07,912: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:11:09,139: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 18:11:09,246: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 18:11:09,246: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 18:11:09,246: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 18:11:10,352: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 690:58:22  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:11:10,354: 	 Myproxy is valid: 2487502
+DEBUG 2015-04-28 18:11:10,354: 	 Command use: status
+DEBUG 2015-04-28 18:11:10,354: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-28 18:11:11,587: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 18:11:11,587: 	 Instance is prod
+DEBUG 2015-04-28 18:11:11,587: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 18:11:11,587: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 18:11:11,587: 	 Looking up detailed status of task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 18:11:15,682: 	 {'status': 'SUBMITTED', 'saveLogs': 'T', 'jobsPerStatus': {'running': 13, 'finished': 25, 'idle': 7, 'transferred': 3}, 'jobs': {'28': {'State': 'transferred'}, '29': {'State': 'finished'}, '24': {'State': 'running'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '48': {'State': 'finished'}, '23': {'State': 'finished'}, '46': {'State': 'idle'}, '47': {'State': 'idle'}, '44': {'State': 'idle'}, '45': {'State': 'finished'}, '42': {'State': 'transferred'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'idle'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'finished'}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'finished'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '14': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '39': {'State': 'running'}, '38': {'State': 'idle'}, '15': {'State': 'finished'}, '22': {'State': 'running'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'idle'}, '35': {'State': 'running'}, '34': {'State': 'idle'}, '33': {'State': 'finished'}, '32': {'State': 'transferred'}}, 'publication': {}, 'taskWarningMsg': [], 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb', 'pool': {}, 'totalJobdefs': 0, 'jobSetID': '150428_224741:bparida_crab_Zh_m125_PtZ-200', 'jobdefErrors': [], 'outdatasets': None, 'jobList': [['transferred', 42], ['finished', 48], ['running', 43], ['running', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['running', 20], ['running', 21], ['running', 22], ['finished', 23], ['idle', 46], ['idle', 47], ['idle', 44], ['finished', 45], ['transferred', 28], ['finished', 29], ['running', 40], ['idle', 41], ['finished', 1], ['finished', 3], ['finished', 2], ['finished', 5], ['finished', 4], ['finished', 7], ['finished', 6], ['finished', 9], ['finished', 8], ['running', 39], ['idle', 38], ['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['running', 19], ['running', 18], ['running', 31], ['running', 30], ['running', 37], ['idle', 36], ['running', 35], ['idle', 34], ['finished', 33], ['transferred', 32]]}
+INFO 2015-04-28 18:11:15,683: 	 Task name:			150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:11:15,683: 	 Task status:			SUBMITTED
+INFO 2015-04-28 18:11:15,683: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:11:15,683: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=crab&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:11:15,683: 	 Details:			finished       52.1% (25/48)
+INFO 2015-04-28 18:11:15,683: 	 				idle           14.6% ( 7/48)
+INFO 2015-04-28 18:11:15,683: 	 				running        27.1% (13/48)
+INFO 2015-04-28 18:11:15,684: 	 				transferred     6.2% ( 3/48)
+DEBUG 2015-04-28 18:14:15,446: 	 Executing command: 'status'
+DEBUG 2015-04-28 18:14:15,448: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 18:14:15,462: 	 Checking credentials
+DEBUG 2015-04-28 18:14:15,462: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 18:14:15,463: 	 Getting proxy life time left
+DEBUG 2015-04-28 18:14:15,565: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 24828
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:14:15,668: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 24828
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:14:15,669: 	 Proxy valid for 06:53:48 hours
+DEBUG 2015-04-28 18:14:15,781: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 18:14:15,781: 	 Checking credentials
+DEBUG 2015-04-28 18:14:15,781: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 18:14:15,781: 	 Getting proxy life time left
+DEBUG 2015-04-28 18:14:15,884: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 24828
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:14:15,987: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 24828
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:14:15,987: 	 Proxy valid for 06:53:48 hours
+DEBUG 2015-04-28 18:14:16,090: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:14:17,364: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 18:14:17,473: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 18:14:17,473: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 18:14:17,473: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 18:14:18,478: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 690:55:14  (28.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 18:14:18,479: 	 Myproxy is valid: 2487314
+DEBUG 2015-04-28 18:14:18,479: 	 Command use: status
+DEBUG 2015-04-28 18:14:18,479: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-28 18:14:19,707: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 18:14:19,707: 	 Instance is prod
+DEBUG 2015-04-28 18:14:19,707: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 18:14:19,708: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 18:14:19,708: 	 Looking up detailed status of task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 18:14:25,211: 	 {'status': 'SUBMITTED', 'saveLogs': 'T', 'jobsPerStatus': {'finished': 26, 'running': 20, 'transferred': 2}, 'jobs': {'28': {'State': 'transferred'}, '29': {'State': 'finished'}, '24': {'State': 'running'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '48': {'State': 'finished'}, '23': {'State': 'finished'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'finished'}, '42': {'State': 'finished'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'finished'}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'finished'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '14': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '15': {'State': 'finished'}, '22': {'State': 'running'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '33': {'State': 'finished'}, '32': {'State': 'transferred'}}, 'publication': {}, 'taskWarningMsg': [], 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb', 'pool': {}, 'totalJobdefs': 0, 'jobSetID': '150428_224741:bparida_crab_Zh_m125_PtZ-200', 'jobdefErrors': [], 'outdatasets': None, 'jobList': [['finished', 42], ['finished', 48], ['running', 43], ['running', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['running', 20], ['running', 21], ['running', 22], ['finished', 23], ['running', 46], ['running', 47], ['running', 44], ['finished', 45], ['transferred', 28], ['finished', 29], ['running', 40], ['running', 41], ['finished', 1], ['finished', 3], ['finished', 2], ['finished', 5], ['finished', 4], ['finished', 7], ['finished', 6], ['finished', 9], ['finished', 8], ['running', 39], ['running', 38], ['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['running', 19], ['running', 18], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['finished', 33], ['transferred', 32]]}
+INFO 2015-04-28 18:14:25,211: 	 Task name:			150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:14:25,211: 	 Task status:			SUBMITTED
+INFO 2015-04-28 18:14:25,211: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:14:25,211: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=crab&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 18:14:25,212: 	 Details:			finished       54.2% (26/48)
+INFO 2015-04-28 18:14:25,212: 	 				running        41.7% (20/48)
+INFO 2015-04-28 18:14:25,212: 	 				transferred     4.2% ( 2/48)
+DEBUG 2015-04-28 20:56:09,857: 	 Executing command: 'status'
+DEBUG 2015-04-28 20:56:09,858: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 20:56:09,874: 	 Checking credentials
+DEBUG 2015-04-28 20:56:09,874: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 20:56:09,874: 	 Getting proxy life time left
+DEBUG 2015-04-28 20:56:09,977: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 43163
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:10,080: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:10,080: 	 Proxy valid for 11:59:23 hours
+DEBUG 2015-04-28 20:56:10,205: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 20:56:10,205: 	 Checking credentials
+DEBUG 2015-04-28 20:56:10,205: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 20:56:10,205: 	 Getting proxy life time left
+DEBUG 2015-04-28 20:56:10,308: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:10,410: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:10,411: 	 Proxy valid for 11:59:22 hours
+DEBUG 2015-04-28 20:56:10,513: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:11,484: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 20:56:11,592: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 20:56:11,592: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 20:56:11,592: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 20:56:12,697: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 688:13:20  (28.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:12,699: 	 Myproxy is valid: 2477600
+DEBUG 2015-04-28 20:56:12,699: 	 Command use: status
+DEBUG 2015-04-28 20:56:12,699: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-28 20:56:13,551: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 20:56:13,551: 	 Instance is prod
+DEBUG 2015-04-28 20:56:13,551: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 20:56:13,551: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 20:56:13,551: 	 Looking up detailed status of task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 20:56:17,662: 	 {'status': 'COMPLETED', 'saveLogs': 'T', 'jobsPerStatus': {'finished': 48}, 'jobs': {'28': {'State': 'finished'}, '29': {'State': 'finished'}, '24': {'State': 'finished'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'finished'}, '21': {'State': 'finished'}, '48': {'State': 'finished'}, '23': {'State': 'finished'}, '46': {'State': 'finished'}, '47': {'State': 'finished'}, '44': {'State': 'finished'}, '45': {'State': 'finished'}, '42': {'State': 'finished'}, '43': {'State': 'finished'}, '40': {'State': 'finished'}, '41': {'State': 'finished'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'finished'}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'finished'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '14': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '39': {'State': 'finished'}, '38': {'State': 'finished'}, '15': {'State': 'finished'}, '22': {'State': 'finished'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'finished'}, '18': {'State': 'finished'}, '31': {'State': 'finished'}, '30': {'State': 'finished'}, '37': {'State': 'finished'}, '36': {'State': 'finished'}, '35': {'State': 'finished'}, '34': {'State': 'finished'}, '33': {'State': 'finished'}, '32': {'State': 'finished'}}, 'publication': {}, 'taskWarningMsg': [], 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb', 'pool': {}, 'totalJobdefs': 0, 'jobSetID': '150428_224741:bparida_crab_Zh_m125_PtZ-200', 'jobdefErrors': [], 'outdatasets': None, 'jobList': [['finished', 42], ['finished', 48], ['finished', 43], ['finished', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['finished', 20], ['finished', 21], ['finished', 22], ['finished', 23], ['finished', 46], ['finished', 47], ['finished', 44], ['finished', 45], ['finished', 28], ['finished', 29], ['finished', 40], ['finished', 41], ['finished', 1], ['finished', 3], ['finished', 2], ['finished', 5], ['finished', 4], ['finished', 7], ['finished', 6], ['finished', 9], ['finished', 8], ['finished', 39], ['finished', 38], ['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['finished', 19], ['finished', 18], ['finished', 31], ['finished', 30], ['finished', 37], ['finished', 36], ['finished', 35], ['finished', 34], ['finished', 33], ['finished', 32]]}
+INFO 2015-04-28 20:56:17,662: 	 Task name:			150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 20:56:17,662: 	 Task status:			COMPLETED
+INFO 2015-04-28 20:56:17,662: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 20:56:17,662: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=crab&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 20:56:17,662: 	 Details:			finished      100.0% (48/48)
+DEBUG 2015-04-28 20:56:24,062: 	 Executing command: 'status'
+DEBUG 2015-04-28 20:56:24,063: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 20:56:24,069: 	 Checking credentials
+DEBUG 2015-04-28 20:56:24,070: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 20:56:24,070: 	 Getting proxy life time left
+DEBUG 2015-04-28 20:56:24,172: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 43148
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:24,275: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 43148
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:24,275: 	 Proxy valid for 11:59:08 hours
+DEBUG 2015-04-28 20:56:24,387: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 20:56:24,387: 	 Checking credentials
+DEBUG 2015-04-28 20:56:24,387: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 20:56:24,387: 	 Getting proxy life time left
+DEBUG 2015-04-28 20:56:24,490: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 43148
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:24,592: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 43148
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:24,593: 	 Proxy valid for 11:59:08 hours
+DEBUG 2015-04-28 20:56:24,695: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:25,700: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 20:56:25,808: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 20:56:25,808: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 20:56:25,808: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 20:56:26,813: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 688:13:06  (28.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 20:56:26,814: 	 Myproxy is valid: 2477586
+DEBUG 2015-04-28 20:56:26,814: 	 Command use: status
+DEBUG 2015-04-28 20:56:26,814: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-28 20:56:27,718: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 20:56:27,718: 	 Instance is prod
+DEBUG 2015-04-28 20:56:27,718: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 20:56:27,718: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 20:56:27,718: 	 Looking up detailed status of task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 20:56:31,866: 	 {'status': 'COMPLETED', 'saveLogs': 'T', 'jobsPerStatus': {'finished': 48}, 'jobs': {'28': {'State': 'finished'}, '29': {'State': 'finished'}, '24': {'State': 'finished'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'finished'}, '21': {'State': 'finished'}, '48': {'State': 'finished'}, '23': {'State': 'finished'}, '46': {'State': 'finished'}, '47': {'State': 'finished'}, '44': {'State': 'finished'}, '45': {'State': 'finished'}, '42': {'State': 'finished'}, '43': {'State': 'finished'}, '40': {'State': 'finished'}, '41': {'State': 'finished'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'finished'}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'finished'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '14': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '39': {'State': 'finished'}, '38': {'State': 'finished'}, '15': {'State': 'finished'}, '22': {'State': 'finished'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'finished'}, '18': {'State': 'finished'}, '31': {'State': 'finished'}, '30': {'State': 'finished'}, '37': {'State': 'finished'}, '36': {'State': 'finished'}, '35': {'State': 'finished'}, '34': {'State': 'finished'}, '33': {'State': 'finished'}, '32': {'State': 'finished'}}, 'publication': {}, 'taskWarningMsg': [], 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb', 'pool': {}, 'totalJobdefs': 0, 'jobSetID': '150428_224741:bparida_crab_Zh_m125_PtZ-200', 'jobdefErrors': [], 'outdatasets': None, 'jobList': [['finished', 42], ['finished', 48], ['finished', 43], ['finished', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['finished', 20], ['finished', 21], ['finished', 22], ['finished', 23], ['finished', 46], ['finished', 47], ['finished', 44], ['finished', 45], ['finished', 28], ['finished', 29], ['finished', 40], ['finished', 41], ['finished', 1], ['finished', 3], ['finished', 2], ['finished', 5], ['finished', 4], ['finished', 7], ['finished', 6], ['finished', 9], ['finished', 8], ['finished', 39], ['finished', 38], ['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['finished', 19], ['finished', 18], ['finished', 31], ['finished', 30], ['finished', 37], ['finished', 36], ['finished', 35], ['finished', 34], ['finished', 33], ['finished', 32]]}
+INFO 2015-04-28 20:56:31,866: 	 Task name:			150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 20:56:31,867: 	 Task status:			COMPLETED
+INFO 2015-04-28 20:56:31,867: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 20:56:31,867: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=crab&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-28 20:56:31,867: 	 Details:			finished      100.0% (48/48)
+DEBUG 2015-04-28 21:19:04,514: 	 Executing command: 'getlog'
+DEBUG 2015-04-28 21:19:04,515: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 21:19:04,540: 	 Checking credentials
+DEBUG 2015-04-28 21:19:04,540: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 21:19:04,540: 	 Getting proxy life time left
+DEBUG 2015-04-28 21:19:04,643: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 41788
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 21:19:04,745: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 41788
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 21:19:04,746: 	 Proxy valid for 11:36:28 hours
+DEBUG 2015-04-28 21:19:04,857: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 21:19:04,857: 	 Checking credentials
+DEBUG 2015-04-28 21:19:04,858: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-28 21:19:04,858: 	 Getting proxy life time left
+DEBUG 2015-04-28 21:19:04,960: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 41788
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 21:19:05,063: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 41787
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 21:19:05,063: 	 Proxy valid for 11:36:28 hours
+DEBUG 2015-04-28 21:19:05,165: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 21:19:06,038: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-28 21:19:06,146: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-28 21:19:06,146: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-28 21:19:06,146: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-28 21:19:07,451: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 687:50:25  (28.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-28 21:19:07,453: 	 Myproxy is valid: 2476225
+DEBUG 2015-04-28 21:19:07,453: 	 Command use: getlog
+DEBUG 2015-04-28 21:19:07,453: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-28 21:19:08,386: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 21:19:08,386: 	 Instance is prod
+DEBUG 2015-04-28 21:19:08,386: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 21:19:08,386: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-28 21:19:08,386: 	 Retrieving locations for task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-28 21:19:08,387: 	 Retrieving all file locations
+DEBUG 2015-04-28 21:19:15,525: 	 Server result: {'result': [{'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_30.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_30.log.tar.gz', 'jobid': 30, 'size': 381576}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_39.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_39.log.tar.gz', 'jobid': 39, 'size': 385627}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_35.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_35.log.tar.gz', 'jobid': 35, 'size': 395307}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_43.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_43.log.tar.gz', 'jobid': 43, 'size': 384021}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_21.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_21.log.tar.gz', 'jobid': 21, 'size': 378596}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_37.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_37.log.tar.gz', 'jobid': 37, 'size': 383522}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_22.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_22.log.tar.gz', 'jobid': 22, 'size': 377217}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_19.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_19.log.tar.gz', 'jobid': 19, 'size': 383987}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_24.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_24.log.tar.gz', 'jobid': 24, 'size': 383872}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_18.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_18.log.tar.gz', 'jobid': 18, 'size': 400633}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_20.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_20.log.tar.gz', 'jobid': 20, 'size': 384386}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_40.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_40.log.tar.gz', 'jobid': 40, 'size': 383439}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_31.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_31.log.tar.gz', 'jobid': 31, 'size': 383440}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_35.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_35.log.tar.gz', 'jobid': 35, 'size': 1121}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_39.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_39.log.tar.gz', 'jobid': 39, 'size': 1124}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_43.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_43.log.tar.gz', 'jobid': 43, 'size': 1124}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_40.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_40.log.tar.gz', 'jobid': 40, 'size': 1121}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_19.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_19.log.tar.gz', 'jobid': 19, 'size': 1119}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_18.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_18.log.tar.gz', 'jobid': 18, 'size': 1120}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_21.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_21.log.tar.gz', 'jobid': 21, 'size': 1122}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_22.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_22.log.tar.gz', 'jobid': 22, 'size': 1122}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_20.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_20.log.tar.gz', 'jobid': 20, 'size': 1122}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_24.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_24.log.tar.gz', 'jobid': 24, 'size': 1118}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_31.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_31.log.tar.gz', 'jobid': 31, 'size': 1642}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_37.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_37.log.tar.gz', 'jobid': 37, 'size': 1123}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_44.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_44.log.tar.gz', 'jobid': 44, 'size': 377187}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_47.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_47.log.tar.gz', 'jobid': 47, 'size': 386307}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_46.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_46.log.tar.gz', 'jobid': 46, 'size': 391871}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_34.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_34.log.tar.gz', 'jobid': 34, 'size': 407839}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_41.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_41.log.tar.gz', 'jobid': 41, 'size': 379811}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_38.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_38.log.tar.gz', 'jobid': 38, 'size': 398875}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_36.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_36.log.tar.gz', 'jobid': 36, 'size': 390321}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_42.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_42.log.tar.gz', 'jobid': 42, 'size': 380165}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_45.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_45.log.tar.gz', 'jobid': 45, 'size': 195248}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_48.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_48.log.tar.gz', 'jobid': 48, 'size': 371437}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_29.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_29.log.tar.gz', 'jobid': 29, 'size': 381819}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_28.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_28.log.tar.gz', 'jobid': 28, 'size': 378250}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_23.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_23.log.tar.gz', 'jobid': 23, 'size': 379079}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_27.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_27.log.tar.gz', 'jobid': 27, 'size': 383944}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_13.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_13.log.tar.gz', 'jobid': 13, 'size': 382155}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_16.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_16.log.tar.gz', 'jobid': 16, 'size': 387356}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_17.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_17.log.tar.gz', 'jobid': 17, 'size': 387207}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_26.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_26.log.tar.gz', 'jobid': 26, 'size': 384050}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_11.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_11.log.tar.gz', 'jobid': 11, 'size': 383303}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_9.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_9.log.tar.gz', 'jobid': 9, 'size': 383871}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_3.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_3.log.tar.gz', 'jobid': 3, 'size': 393584}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_12.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_12.log.tar.gz', 'jobid': 12, 'size': 381254}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_15.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_15.log.tar.gz', 'jobid': 15, 'size': 396545}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_7.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_7.log.tar.gz', 'jobid': 7, 'size': 391146}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_1.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_1.log.tar.gz', 'jobid': 1, 'size': 391464}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_8.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_8.log.tar.gz', 'jobid': 8, 'size': 378353}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_5.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_5.log.tar.gz', 'jobid': 5, 'size': 390969}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_10.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_10.log.tar.gz', 'jobid': 10, 'size': 393312}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_6.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_6.log.tar.gz', 'jobid': 6, 'size': 402342}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_2.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_2.log.tar.gz', 'jobid': 2, 'size': 381773}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_14.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_14.log.tar.gz', 'jobid': 14, 'size': 391448}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_4.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_4.log.tar.gz', 'jobid': 4, 'size': 377204}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_33.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_33.log.tar.gz', 'jobid': 33, 'size': 383334}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_25.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_25.log.tar.gz', 'jobid': 25, 'size': 392251}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_32.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_32.log.tar.gz', 'jobid': 32, 'size': 375278}], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_args', 'panda_resubmitted_jobs', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_asourl', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run']}}
+INFO 2015-04-28 21:19:15,526: 	 Setting the destination to /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results 
+INFO 2015-04-28 21:19:15,526: 	 Retrieving 60 files
+DEBUG 2015-04-28 21:19:15,527: 	 Executing command: 'remote_copy'
+DEBUG 2015-04-28 21:19:15,527: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-28 21:19:15,531: 	 Skipping proxy creation
+DEBUG 2015-04-28 21:19:15,531: 	 Command use: remote_copy
+DEBUG 2015-04-28 21:19:15,532: 	 Options use: ['--destination', '/uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results', '--input', [{'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_30.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_30.log.tar.gz', 'jobid': 30, 'size': 381576}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_39.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_39.log.tar.gz', 'jobid': 39, 'size': 385627}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_35.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_35.log.tar.gz', 'jobid': 35, 'size': 395307}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_43.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_43.log.tar.gz', 'jobid': 43, 'size': 384021}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_21.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_21.log.tar.gz', 'jobid': 21, 'size': 378596}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_37.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_37.log.tar.gz', 'jobid': 37, 'size': 383522}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_22.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_22.log.tar.gz', 'jobid': 22, 'size': 377217}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_19.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_19.log.tar.gz', 'jobid': 19, 'size': 383987}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_24.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_24.log.tar.gz', 'jobid': 24, 'size': 383872}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_18.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_18.log.tar.gz', 'jobid': 18, 'size': 400633}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_20.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_20.log.tar.gz', 'jobid': 20, 'size': 384386}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_40.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_40.log.tar.gz', 'jobid': 40, 'size': 383439}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_31.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_31.log.tar.gz', 'jobid': 31, 'size': 383440}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_35.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_35.log.tar.gz', 'jobid': 35, 'size': 1121}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_39.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_39.log.tar.gz', 'jobid': 39, 'size': 1124}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_43.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_43.log.tar.gz', 'jobid': 43, 'size': 1124}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_40.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_40.log.tar.gz', 'jobid': 40, 'size': 1121}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_19.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_19.log.tar.gz', 'jobid': 19, 'size': 1119}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_18.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_18.log.tar.gz', 'jobid': 18, 'size': 1120}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_21.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_21.log.tar.gz', 'jobid': 21, 'size': 1122}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_22.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_22.log.tar.gz', 'jobid': 22, 'size': 1122}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_20.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_20.log.tar.gz', 'jobid': 20, 'size': 1122}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_24.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_24.log.tar.gz', 'jobid': 24, 'size': 1118}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_31.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_31.log.tar.gz', 'jobid': 31, 'size': 1642}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_37.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/failed/log/cmsRun_37.log.tar.gz', 'jobid': 37, 'size': 1123}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_44.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_44.log.tar.gz', 'jobid': 44, 'size': 377187}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_47.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_47.log.tar.gz', 'jobid': 47, 'size': 386307}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_46.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_46.log.tar.gz', 'jobid': 46, 'size': 391871}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_34.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_34.log.tar.gz', 'jobid': 34, 'size': 407839}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_41.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_41.log.tar.gz', 'jobid': 41, 'size': 379811}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_38.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_38.log.tar.gz', 'jobid': 38, 'size': 398875}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_36.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_36.log.tar.gz', 'jobid': 36, 'size': 390321}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_42.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_42.log.tar.gz', 'jobid': 42, 'size': 380165}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_45.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_45.log.tar.gz', 'jobid': 45, 'size': 195248}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_48.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_48.log.tar.gz', 'jobid': 48, 'size': 371437}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_29.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_29.log.tar.gz', 'jobid': 29, 'size': 381819}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_28.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_28.log.tar.gz', 'jobid': 28, 'size': 378250}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_23.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_23.log.tar.gz', 'jobid': 23, 'size': 379079}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_27.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_27.log.tar.gz', 'jobid': 27, 'size': 383944}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_13.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_13.log.tar.gz', 'jobid': 13, 'size': 382155}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_16.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_16.log.tar.gz', 'jobid': 16, 'size': 387356}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_17.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_17.log.tar.gz', 'jobid': 17, 'size': 387207}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_26.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_26.log.tar.gz', 'jobid': 26, 'size': 384050}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_11.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_11.log.tar.gz', 'jobid': 11, 'size': 383303}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_9.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_9.log.tar.gz', 'jobid': 9, 'size': 383871}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_3.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_3.log.tar.gz', 'jobid': 3, 'size': 393584}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_12.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_12.log.tar.gz', 'jobid': 12, 'size': 381254}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_15.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_15.log.tar.gz', 'jobid': 15, 'size': 396545}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_7.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_7.log.tar.gz', 'jobid': 7, 'size': 391146}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_1.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_1.log.tar.gz', 'jobid': 1, 'size': 391464}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_8.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_8.log.tar.gz', 'jobid': 8, 'size': 378353}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_5.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_5.log.tar.gz', 'jobid': 5, 'size': 390969}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_10.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_10.log.tar.gz', 'jobid': 10, 'size': 393312}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_6.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_6.log.tar.gz', 'jobid': 6, 'size': 402342}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_2.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_2.log.tar.gz', 'jobid': 2, 'size': 381773}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_14.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_14.log.tar.gz', 'jobid': 14, 'size': 391448}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_4.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_4.log.tar.gz', 'jobid': 4, 'size': 377204}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_33.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_33.log.tar.gz', 'jobid': 33, 'size': 383334}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_25.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_25.log.tar.gz', 'jobid': 25, 'size': 392251}, {'checksum': {'adler32': '6d1096fe', 'cksum': 3701783610, 'md5': '6d1096fe'}, 'pfn': 'srm://cmseos.fnal.gov:8443/srm/v2/server?SFN=/eos/uscms/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_32.log.tar.gz', 'lfn': '/store/user/bparida/test_job/new/Zh_m125_PtZ-200/Zh_m125_PtZ-200/150428_224741/0000/log/cmsRun_32.log.tar.gz', 'jobid': 32, 'size': 375278}], '--dir', 'crab_Zh_m125_PtZ-200', '--proxy', '/tmp/x509up_u47333', '--parallel', None, '--wait', None]
+DEBUG 2015-04-28 21:19:16,402: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-28 21:19:16,402: 	 Instance is prod
+DEBUG 2015-04-28 21:19:16,402: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-28 21:19:16,402: 	 Command url /crabserver/prod/workflow
+INFO 2015-04-28 21:19:16,417: 	 Will use `lcg-cp` command for file transfers
+DEBUG 2015-04-28 21:19:16,438: 	 Starting ChildProcess with 10 ChildProcess
+INFO 2015-04-28 21:19:16,450: 	 Skipping cmsRun_30.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_30.log.tar.gz
+INFO 2015-04-28 21:19:16,450: 	 Removing cmsRun_39.log.tar.gz as it is not complete: current size 1124, expected size 385627
+INFO 2015-04-28 21:19:16,457: 	 Placing file 'cmsRun_39.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,459: 	 Removing cmsRun_35.log.tar.gz as it is not complete: current size 1121, expected size 395307
+INFO 2015-04-28 21:19:16,465: 	 Placing file 'cmsRun_35.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,466: 	 Removing cmsRun_43.log.tar.gz as it is not complete: current size 1124, expected size 384021
+INFO 2015-04-28 21:19:16,472: 	 Placing file 'cmsRun_43.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,473: 	 Removing cmsRun_21.log.tar.gz as it is not complete: current size 1122, expected size 378596
+INFO 2015-04-28 21:19:16,479: 	 Placing file 'cmsRun_21.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,480: 	 Removing cmsRun_37.log.tar.gz as it is not complete: current size 1123, expected size 383522
+INFO 2015-04-28 21:19:16,486: 	 Placing file 'cmsRun_37.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,487: 	 Removing cmsRun_22.log.tar.gz as it is not complete: current size 1122, expected size 377217
+INFO 2015-04-28 21:19:16,493: 	 Placing file 'cmsRun_22.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,494: 	 Removing cmsRun_19.log.tar.gz as it is not complete: current size 1119, expected size 383987
+INFO 2015-04-28 21:19:16,500: 	 Placing file 'cmsRun_19.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,501: 	 Removing cmsRun_24.log.tar.gz as it is not complete: current size 1118, expected size 383872
+INFO 2015-04-28 21:19:16,507: 	 Placing file 'cmsRun_24.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,508: 	 Removing cmsRun_18.log.tar.gz as it is not complete: current size 1120, expected size 400633
+INFO 2015-04-28 21:19:16,515: 	 Placing file 'cmsRun_18.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,516: 	 Removing cmsRun_20.log.tar.gz as it is not complete: current size 1122, expected size 384386
+INFO 2015-04-28 21:19:16,523: 	 Placing file 'cmsRun_20.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,524: 	 Skipping cmsRun_40.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_40.log.tar.gz
+INFO 2015-04-28 21:19:16,524: 	 Removing cmsRun_31.log.tar.gz as it is not complete: current size 1642, expected size 383440
+INFO 2015-04-28 21:19:16,531: 	 Placing file 'cmsRun_31.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,539: 	 Placing file 'cmsRun_35.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,546: 	 Placing file 'cmsRun_39.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,553: 	 Placing file 'cmsRun_43.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,553: 	 Removing cmsRun_40.log.tar.gz as it is not complete: current size 383439, expected size 1121
+INFO 2015-04-28 21:19:16,559: 	 Placing file 'cmsRun_40.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,565: 	 Placing file 'cmsRun_19.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,571: 	 Placing file 'cmsRun_18.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,577: 	 Placing file 'cmsRun_21.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,583: 	 Placing file 'cmsRun_22.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,588: 	 Placing file 'cmsRun_20.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,593: 	 Placing file 'cmsRun_24.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,599: 	 Placing file 'cmsRun_31.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,604: 	 Placing file 'cmsRun_37.log.tar.gz' in retrieval queue 
+INFO 2015-04-28 21:19:16,605: 	 Skipping cmsRun_44.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_44.log.tar.gz
+INFO 2015-04-28 21:19:16,606: 	 Skipping cmsRun_47.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_47.log.tar.gz
+INFO 2015-04-28 21:19:16,606: 	 Skipping cmsRun_46.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_46.log.tar.gz
+INFO 2015-04-28 21:19:16,607: 	 Skipping cmsRun_34.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_34.log.tar.gz
+INFO 2015-04-28 21:19:16,607: 	 Skipping cmsRun_41.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_41.log.tar.gz
+INFO 2015-04-28 21:19:16,608: 	 Skipping cmsRun_38.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_38.log.tar.gz
+INFO 2015-04-28 21:19:16,608: 	 Skipping cmsRun_36.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_36.log.tar.gz
+INFO 2015-04-28 21:19:16,609: 	 Skipping cmsRun_42.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_42.log.tar.gz
+INFO 2015-04-28 21:19:16,609: 	 Skipping cmsRun_45.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_45.log.tar.gz
+INFO 2015-04-28 21:19:16,610: 	 Skipping cmsRun_48.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_48.log.tar.gz
+INFO 2015-04-28 21:19:16,610: 	 Skipping cmsRun_29.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_29.log.tar.gz
+INFO 2015-04-28 21:19:16,611: 	 Skipping cmsRun_28.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_28.log.tar.gz
+INFO 2015-04-28 21:19:16,611: 	 Skipping cmsRun_23.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_23.log.tar.gz
+INFO 2015-04-28 21:19:16,612: 	 Skipping cmsRun_27.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_27.log.tar.gz
+INFO 2015-04-28 21:19:16,612: 	 Skipping cmsRun_13.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_13.log.tar.gz
+INFO 2015-04-28 21:19:16,613: 	 Skipping cmsRun_16.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_16.log.tar.gz
+INFO 2015-04-28 21:19:16,613: 	 Skipping cmsRun_17.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_17.log.tar.gz
+INFO 2015-04-28 21:19:16,614: 	 Skipping cmsRun_26.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_26.log.tar.gz
+INFO 2015-04-28 21:19:16,614: 	 Skipping cmsRun_11.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_11.log.tar.gz
+INFO 2015-04-28 21:19:16,615: 	 Skipping cmsRun_9.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_9.log.tar.gz
+INFO 2015-04-28 21:19:16,615: 	 Skipping cmsRun_3.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_3.log.tar.gz
+INFO 2015-04-28 21:19:16,616: 	 Skipping cmsRun_12.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_12.log.tar.gz
+INFO 2015-04-28 21:19:16,616: 	 Skipping cmsRun_15.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_15.log.tar.gz
+INFO 2015-04-28 21:19:16,617: 	 Skipping cmsRun_7.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_7.log.tar.gz
+INFO 2015-04-28 21:19:16,617: 	 Skipping cmsRun_1.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_1.log.tar.gz
+INFO 2015-04-28 21:19:16,618: 	 Skipping cmsRun_8.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_8.log.tar.gz
+INFO 2015-04-28 21:19:16,618: 	 Skipping cmsRun_5.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_5.log.tar.gz
+INFO 2015-04-28 21:19:16,619: 	 Skipping cmsRun_10.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_10.log.tar.gz
+INFO 2015-04-28 21:19:16,619: 	 Skipping cmsRun_6.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_6.log.tar.gz
+INFO 2015-04-28 21:19:16,620: 	 Skipping cmsRun_2.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_2.log.tar.gz
+INFO 2015-04-28 21:19:16,620: 	 Skipping cmsRun_14.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_14.log.tar.gz
+INFO 2015-04-28 21:19:16,621: 	 Skipping cmsRun_4.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_4.log.tar.gz
+INFO 2015-04-28 21:19:16,621: 	 Skipping cmsRun_33.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_33.log.tar.gz
+INFO 2015-04-28 21:19:16,622: 	 Skipping cmsRun_25.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_25.log.tar.gz
+INFO 2015-04-28 21:19:16,622: 	 Skipping cmsRun_32.log.tar.gz as file already exists in /uscms_data/d3/bparida/VHbb/new_receipe/miniAOD_Analysis/Correction/CMSSW_7_3_1_patch2/src/Test/MiniAnalyzer/crab_Zh_m125_PtZ-200/results/cmsRun_32.log.tar.gz
+INFO 2015-04-28 21:19:16,622: 	 Please wait
+DEBUG 2015-04-28 21:19:16,623: 	 stopchildproc() method has been called
+INFO 2015-04-28 21:40:05,572: 	 Success: All files successfully retrieved
+DEBUG 2015-04-30 11:31:21,461: 	 Executing command: 'status'
+DEBUG 2015-04-30 11:31:21,462: 	 Found /uscms/home/bparida/.crab3 file
+DEBUG 2015-04-30 11:31:21,518: 	 Checking credentials
+DEBUG 2015-04-30 11:31:21,518: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-30 11:31:21,518: 	 Getting proxy life time left
+DEBUG 2015-04-30 11:31:21,620: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 43068
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-30 11:31:21,722: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 43068
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-30 11:31:21,722: 	 Proxy valid for 11:57:48 hours
+DEBUG 2015-04-30 11:31:21,868: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-30 11:31:21,868: 	 Checking credentials
+DEBUG 2015-04-30 11:31:21,868: 	 Found proxy file /tmp/x509up_u47333
+DEBUG 2015-04-30 11:31:21,868: 	 Getting proxy life time left
+DEBUG 2015-04-30 11:31:21,970: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -timeleft
+ output : 43068
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-30 11:31:22,071: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u47333 -actimeleft
+ output : 43068
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-30 11:31:22,072: 	 Proxy valid for 11:57:48 hours
+DEBUG 2015-04-30 11:31:22,173: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u47333 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-30 11:31:22,951: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+DEBUG 2015-04-30 11:31:23,056: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-04-30 11:31:23,056: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2015-04-30 11:31:23,056: 	 Calculating hash of /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514_cmsweb.cern.ch for credential name
+DEBUG 2015-04-30 11:31:24,661: 	 Executing : 
+ command : myproxy-info -l 272d01933f87a0b483da744cd7ecec278e81b2db -s myproxy.cern.ch
+ output : username: 272d01933f87a0b483da744cd7ecec278e81b2db
+owner: /C=TW/O=AP/OU=GRID/CN=Bibhuti Parida 158514
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(3[136]|21|045|052|021|031).cern.ch
+  timeleft: 649:38:08  (27.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2015-04-30 11:31:24,662: 	 Myproxy is valid: 2338688
+DEBUG 2015-04-30 11:31:24,662: 	 Command use: status
+DEBUG 2015-04-30 11:31:24,662: 	 Options use: ['crab_Zh_m125_PtZ-200']
+DEBUG 2015-04-30 11:31:25,474: 	 CRABClient version: 3.3.15.patch1 Compatible
+DEBUG 2015-04-30 11:31:25,474: 	 Instance is prod
+DEBUG 2015-04-30 11:31:25,474: 	 Server base url is cmsweb.cern.ch
+DEBUG 2015-04-30 11:31:25,474: 	 Command url /crabserver/prod/workflow
+DEBUG 2015-04-30 11:31:25,475: 	 Looking up detailed status of task 150428_224741:bparida_crab_Zh_m125_PtZ-200
+DEBUG 2015-04-30 11:31:29,824: 	 {'status': 'COMPLETED', 'saveLogs': 'T', 'jobsPerStatus': {'finished': 48}, 'jobs': {'28': {'State': 'finished'}, '29': {'State': 'finished'}, '24': {'State': 'finished'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'finished'}, '21': {'State': 'finished'}, '48': {'State': 'finished'}, '23': {'State': 'finished'}, '46': {'State': 'finished'}, '47': {'State': 'finished'}, '44': {'State': 'finished'}, '45': {'State': 'finished'}, '42': {'State': 'finished'}, '43': {'State': 'finished'}, '40': {'State': 'finished'}, '41': {'State': 'finished'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'finished'}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'finished'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '14': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '39': {'State': 'finished'}, '38': {'State': 'finished'}, '15': {'State': 'finished'}, '22': {'State': 'finished'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'finished'}, '18': {'State': 'finished'}, '31': {'State': 'finished'}, '30': {'State': 'finished'}, '37': {'State': 'finished'}, '36': {'State': 'finished'}, '35': {'State': 'finished'}, '34': {'State': 'finished'}, '33': {'State': 'finished'}, '32': {'State': 'finished'}}, 'publication': {}, 'taskWarningMsg': [], 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb', 'pool': {}, 'totalJobdefs': 0, 'jobSetID': '150428_224741:bparida_crab_Zh_m125_PtZ-200', 'jobdefErrors': [], 'outdatasets': None, 'jobList': [['finished', 42], ['finished', 48], ['finished', 43], ['finished', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['finished', 20], ['finished', 21], ['finished', 22], ['finished', 23], ['finished', 46], ['finished', 47], ['finished', 44], ['finished', 45], ['finished', 28], ['finished', 29], ['finished', 40], ['finished', 41], ['finished', 1], ['finished', 3], ['finished', 2], ['finished', 5], ['finished', 4], ['finished', 7], ['finished', 6], ['finished', 9], ['finished', 8], ['finished', 39], ['finished', 38], ['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['finished', 19], ['finished', 18], ['finished', 31], ['finished', 30], ['finished', 37], ['finished', 36], ['finished', 35], ['finished', 34], ['finished', 33], ['finished', 32]]}
+INFO 2015-04-30 11:31:29,824: 	 Task name:			150428_224741:bparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-30 11:31:29,824: 	 Task status:			COMPLETED
+INFO 2015-04-30 11:31:29,824: 	 Glidemon monitoring URL:	http://glidemon.web.cern.ch/glidemon/jobs.php?taskname=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-30 11:31:29,824: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=crab&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=150428_224741%3Abparida_crab_Zh_m125_PtZ-200
+INFO 2015-04-30 11:31:29,824: 	 Details:			finished      100.0% (48/48)
